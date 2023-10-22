@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>APLIKASI PEMESANAN TIKET TRAVEL</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1>APLIKASI PEMESANAN TIKET TRAVEL</h1>
+        <p>Nama :</p><input type="text" id="nama">
+        <p>Tujuan : </p>
+        <select name="" id="tujuan" onchange="showHarga()" required>
+            <option value="0">
+                Pilih Tujuan
+            </option>
+            <option value="Bandung">
+                Bandung
+            </option>
+            <option value="Jakarta">
+                Jakarta
+            </option>
+        </select>
+        <p> Harga Tiket</p> <input type="text" value="" id="harga" readonly>
+        <p> Jumlah : </p>
+        <select id="jml_tiket" onchange="calculateTotal()">
+            <option value="0">Pilih Jumlah</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+        </select>
+        <div style="display: flex; align-content: center;">
+            <p> Member</p> <input style="margin-top: 12px;" type="checkbox" id="member" onchange="showDiskon()">
+        </div>
+        <p> Diskon</p><input type="text" id="diskonPersen" value="0%" readonly>
+        <p> Total Bayar </p> <input type="text" value="Rp. 0" id="TotalBayar" readonly>
+        <button onclick="submit()">Submit</button>
+        <button onclick="reset()">Reset</button>
+    </div>
+    <script src="tiket.js">
+
+    </script>
+</body>
+
+</html>

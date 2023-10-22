@@ -1,0 +1,123 @@
+/* Global Styles */
+body {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background-image: url('background-image.jpg');
+    background-size: cover;
+    background-position: center;
+    margin: 0;
+    padding: 0;
+    
+}
+
+.container {
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+   
+}
+
+h1 {
+    background-color: #17b1dc;
+    color: #ffffff;
+    font-size: 24px;
+    padding: 20px 0;
+    border-radius: 10px 10px 0 0;
+    text-align: center;
+    
+}
+
+
+
+input[type="text"],
+select {
+    width: 90%;
+    padding: 15px;
+    
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+select {
+    width: 97%;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background-color: transparent;
+    background-size: 20px;
+}
+
+/* Button Styles */
+button {
+    background-color: #1dddee;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 10px;
+
+    cursor: pointer;
+    font-size: 18px;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #4bd5ff;
+}
+
+button[type="reset"] {
+    background-color: #3498db;
+    margin-left: 10px;
+}
+#member {
+    width: 3dvb; /* Ubah ukuran lebar checkbox */
+    height: 30px; 
+}
+
+button[type="reset"]:hover {
+    background-color: #2980b9;
+}
+
+
+
+#TotalBayar {
+    background-color: #3498db;
+    color: #ffffff;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 8px;
+    
+    font-size: 24px;
+    
+}
+
+#TotalBayar::before {
+    content: "Total Bayar: ";
+}
+
+#TotalBayar::after {
+    content: " IDR";
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 600px) {
+    .container {
+        max-width: 100%;
+        margin: 0;
+        border-radius: 0;
+    }
+    h1 {
+        border-radius: 0;
+    }
+}
+
+/* Additional Styles */
+#tujuan {
+    background-color: rgba(255, 255, 255, 0.7);
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
